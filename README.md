@@ -1,2 +1,2 @@
 # jenkins-test
-test project for configuring Jenkins
+test project for Jenkins
