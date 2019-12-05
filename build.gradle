@@ -29,3 +29,11 @@ properties{
   property "sonar.login", "fb5ccee9002d7b890ebc47f39fe62060d6d49dd9"
   }
 }
+
+task finalize {
+    doLast {
+       sonarqube
+    }
+}
+
+build.finalizedBy(finalize)
