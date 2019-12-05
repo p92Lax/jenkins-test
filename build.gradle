@@ -42,7 +42,7 @@ jar {
 
 
 
-sonarqube{
+sonarqube(dependsOn: build){
     properties{
           property "sonar.projectKey","Carma-test"
           property "sonar.host.url", "http://10.128.65.213:9000" 
