@@ -43,8 +43,10 @@ jar {
 
 
 task callSonarqube(dependsOn: build){
-        doLast{
-        println "call sonar ------ "
+    properties{
+        property "sonar.projectKey","Carma-test"
+        property "sonar.host.url", "http://10.128.65.213:9000"
+        property "sonar.login", "a3307c96c9793c52069cf7116533807971c5927a"
     }
 }
 
