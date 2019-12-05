@@ -21,3 +21,11 @@ jar {
 dependencies {
    compile  'log4j:log4j:1.2.16'
 } 
+
+sonarqube{
+properties{
+  property "sonar.projectKey","Carma-test"
+  property "sonar.host.url", "http://10.128.65.213:9000" 
+  property "sonar.login", "fb5ccee9002d7b890ebc47f39fe62060d6d49dd9"
+  }
+}
