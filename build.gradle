@@ -2,6 +2,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 archivesBaseName = 'someJar'
+apply plugin: 'org.sonarqube'
+
 version = '1.0-SNAPSHOT'
 
 plugins {
@@ -29,11 +31,3 @@ properties{
   property "sonar.login", "fb5ccee9002d7b890ebc47f39fe62060d6d49dd9"
   }
 }
-
-task finalize {
-    doLast {
-       println('SONARQUBE!')
-    }
-}
-
-build.finalizedBy(finalize)
