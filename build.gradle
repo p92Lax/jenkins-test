@@ -32,7 +32,7 @@ properties{
 
 task finalize {
     doLast {
-       sonarqube
+       println('SONARQUBE!')
     }
 }
 
