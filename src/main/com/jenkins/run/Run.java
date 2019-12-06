@@ -8,6 +8,8 @@ public class Run {
 		System.out.println("Hello branch-1");
 		"Hello".equals("Hello");
 		"Hello".equals("Hello");
+		"Hello".equals("Hello");
+		"Hello".equals("Hello");
 	}
 
 }
